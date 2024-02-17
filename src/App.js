@@ -29,7 +29,7 @@ const InputText = (props) => {
 };
 
 function App() {
-  const [items, setItems] = useState(['oranges', 'apples', 'candy']);
+  const [items, setItems] = useState([]);
 
   const handleClick = (item) => {
     setItems(items.filter((i) => i !== item));
@@ -40,14 +40,18 @@ function App() {
   };
 
   return (
+    <>
     <div id="list-container">
-      <h1>Shopping List</h1>
+      <h1><b><i>Shopping List</i></b></h1>
+      <p>Item name:</p>
       <ListDisplay items={items} handleClick={handleClick} />
       <InputText handleSubmit={handleSubmit} />
       {/* <form> */}
         {/* <InputText handleSubmit={handleClick}/> */}
       {/* </form> */}
     </div>
+    <p className='github'><i>You can see repo of this on <b><a href='https://github.com/SyedHuzaifaNazim'>Github</a></b></i></p>
+    </>
   );
 }
 
