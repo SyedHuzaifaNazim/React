@@ -44,8 +44,8 @@ function App() {
     <div id="list-container">
       <h1><b><i>Shopping List</i></b></h1>
       <p>Item name:</p>
-      <ListDisplay items={items} handleClick={handleClick} />
       <InputText handleSubmit={handleSubmit} />
+      <ListDisplay items={items} handleClick={handleClick} />
       {/* <form> */}
         {/* <InputText handleSubmit={handleClick}/> */}
       {/* </form> */}
